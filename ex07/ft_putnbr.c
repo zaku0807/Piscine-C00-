@@ -6,7 +6,7 @@
 /*   By: skuzawa <skuzawa@student.42tokyo.jp>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/02/20 15:28:25 by skuzawa           #+#    #+#             */
-/*   Updated: 2021/02/21 13:21:16 by skuzawa          ###   ########.fr       */
+/*   Updated: 2021/02/21 22:23:04 by skuzawa          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -78,6 +78,10 @@ void		ft_putnbr(int nb)
 	int ans;
 	int ch;
 
+	if (nb == 0)
+	{
+		ft_putchar('0');
+	}
 	if (nb == -2147483648)
 	{
 		ft_example();
