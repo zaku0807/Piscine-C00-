@@ -6,7 +6,7 @@
 /*   By: skuzawa <skuzawa@student.42tokyo.jp>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/02/22 17:25:49 by skuzawa           #+#    #+#             */
-/*   Updated: 2021/03/03 11:22:18 by skuzawa          ###   ########.fr       */
+/*   Updated: 2021/03/03 15:12:27 by skuzawa          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,10 @@ void	ft_shun(char *a, int n, int cnt, char temp)
 	{
 		ft_putstr(a);
 		if (a[0] != (10 - n) + '0')
+		{
+			write(1, ",", 1);
 			write(1, " ", 1);
+		}
 		return ;
 	}
 	a[cnt] = temp;
